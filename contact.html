@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ với Fashion Store - Hỗ trợ khách hàng 24/7. Gửi câu hỏi, góp ý hoặc thông tin liên hệ.">
+    <meta name="keywords" content="liên hệ, hỗ trợ khách hàng, fashion store, địa chỉ cửa hàng">
+    <title>Liên Hệ - Fashion Store</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👔</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <!-- Announcement Bar -->
+        <div class="announcement-bar">
+            <div class="container">
+                <div class="announcement-content">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>Miễn phí vận chuyển cho đơn hàng từ 500.000đ</span>
+                    <span class="separator">•</span>
+                    <span>Giảm giá 20% toàn bộ BST Xuân Hè 2024</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-top-left">
+                        <span><i class="fas fa-phone"></i> Hotline: 1900 1234</span>
+                        <span><i class="fas fa-envelope"></i> support@fashion.com</span>
+                    </div>
+                    <div class="header-top-right">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Header Main -->
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <!-- Logo -->
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">FASHION</span>
+                            <span class="logo-subtitle">Luxury Store</span>
+                        </div>
+                    </a>
+                    
+                    <!-- Navigation -->
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item has-mega-menu">
+                                <a href="products.html" class="nav-link">
+                                    Sản Phẩm
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="mega-menu">
+                                    <div class="mega-menu-content">
+                                        <div class="mega-menu-column">
+                                            <h4>Nam Giới</h4>
+                                            <ul>
+                                                <li><a href="products.html?category=ao-nam"><i class="fas fa-angle-right"></i> Áo Nam</a></li>
+                                                <li><a href="products.html?category=quan-nam"><i class="fas fa-angle-right"></i> Quần Nam</a></li>
+                                                <li><a href="products.html?category=giay-dep"><i class="fas fa-angle-right"></i> Giày Dép</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-column">
+                                            <h4>Nữ Giới</h4>
+                                            <ul>
+                                                <li><a href="products.html?category=ao-nu"><i class="fas fa-angle-right"></i> Áo Nữ</a></li>
+                                                <li><a href="products.html?category=vay"><i class="fas fa-angle-right"></i> Váy Đầm</a></li>
+                                                <li><a href="products.html?category=phu-kien"><i class="fas fa-angle-right"></i> Phụ Kiện</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-column">
+                                            <h4>Bộ Sưu Tập</h4>
+                                            <ul>
+                                                <li><a href="products.html?filter=new"><i class="fas fa-angle-right"></i> Hàng Mới Về</a></li>
+                                                <li><a href="products.html?filter=sale"><i class="fas fa-angle-right"></i> Sale Off</a></li>
+                                                <li><a href="products.html"><i class="fas fa-angle-right"></i> Best Seller</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-column mega-menu-featured">
+                                            <h4>Featured</h4>
+                                            <div class="featured-item">
+                                                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300" alt="Featured">
+                                                <div class="featured-content">
+                                                    <h5>BST Mùa Hè 2024</h5>
+                                                    <p>Giảm giá đến 30%</p>
+                                                    <a href="products.html?filter=sale" class="btn-featured">Xem ngay</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="products.html?filter=new" class="nav-link">
+                                    <span class="badge-new">Mới</span>
+                                    Hàng Mới
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="products.html?filter=sale" class="nav-link">
+                                    <span class="badge-sale">Sale</span>
+                                    Giảm Giá
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog.html" class="nav-link">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link active">Liên Hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- Header Actions -->
+                    <div class="header-actions">
+                        <!-- Search -->
+                        <button class="action-btn search-toggle" id="searchToggle" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        
+                        <!-- Wishlist -->
+                        <a href="#" class="action-btn" aria-label="Wishlist">
+                            <i class="far fa-heart"></i>
+                            <span class="action-badge">0</span>
+                        </a>
+                        
+                        <!-- User -->
+                        <a href="#" class="action-btn" id="userIcon" aria-label="Account">
+                            <i class="far fa-user"></i>
+                        </a>
+                        
+                        <!-- Cart -->
+                        <a href="cart.html" class="action-btn cart-btn">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="action-badge" id="cartBadge">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-overlay-content">
+                <button class="search-close" id="searchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="search-container">
+                    <input type="text" class="search-input" id="headerSearchInput" placeholder="Tìm kiếm sản phẩm, danh mục..." autocomplete="off">
+                    <button class="search-submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li>Liên Hệ</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h1>Liên Hệ Với Chúng Tôi</h1>
+                <p>Chúng tôi luôn sẵn sàng lắng nghe và hỗ trợ bạn</p>
+            </div>
+
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info-grid">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Địa Chỉ</h3>
+                        <p>123 Đường Nguyễn Huệ<br>Quận 1, TP. Hồ Chí Minh</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Điện Thoại</h3>
+                        <p>Hotline: <a href="tel:19001234">1900 1234</a><br>
+                        Mobile: <a href="tel:0901234567">090 123 4567</a></p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:support@fashion.com">support@fashion.com</a><br>
+                        <a href="mailto:sales@fashion.com">sales@fashion.com</a></p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Giờ Làm Việc</h3>
+                        <p>Thứ 2 - Thứ 7: 8:00 - 22:00<br>Chủ Nhật: 9:00 - 21:00</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form & Map -->
+                <div class="contact-main">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <h2>Gửi Tin Nhắn Cho Chúng Tôi</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Họ và Tên *</label>
+                                    <input type="text" id="name" name="name" required placeholder="Nhập họ và tên">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required placeholder="Nhập email">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Số Điện Thoại</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">Chủ Đề</label>
+                                    <select id="subject" name="subject">
+                                        <option value="">Chọn chủ đề</option>
+                                        <option value="order">Đơn hàng</option>
+                                        <option value="product">Sản phẩm</option>
+                                        <option value="shipping">Vận chuyển</option>
+                                        <option value="return">Đổi trả</option>
+                                        <option value="other">Khác</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Tin Nhắn *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Nhập nội dung tin nhắn..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Gửi Tin Nhắn
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Google Map -->
+                    <div class="contact-map">
+                        <h2>Vị Trí Cửa Hàng</h2>
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4956829077114!2d106.70298731533428!3d10.775272262206738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b3330bcc9%3A0xb51296c61db5e0c3!2zTmd1eeG7hW4gSHXhu4c!5e0!3m2!1svi!2s!4v1234567890123!5m2!1svi!2s" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Locations -->
+    <section class="store-locations">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Hệ Thống Cửa Hàng</h2>
+                <p>Ghé thăm cửa hàng Fashion Store gần bạn</p>
+            </div>
+
+            <div class="stores-grid">
+                <div class="store-card">
+                    <div class="store-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop" alt="Store 1">
+                    </div>
+                    <div class="store-info">
+                        <h3>Chi Nhánh Quận 1</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Huệ, Quận 1, TP.HCM</p>
+                        <p><i class="fas fa-phone"></i> 028 1234 5678</p>
+                        <p><i class="fas fa-clock"></i> 8:00 - 22:00 (Thứ 2 - Thứ 7)</p>
+                    </div>
+                </div>
+
+                <div class="store-card">
+                    <div class="store-image">
+                        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&h=300&fit=crop" alt="Store 2">
+                    </div>
+                    <div class="store-info">
+                        <h3>Chi Nhánh Quận 3</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 456 Lê Văn Sỹ, Quận 3, TP.HCM</p>
+                        <p><i class="fas fa-phone"></i> 028 9876 5432</p>
+                        <p><i class="fas fa-clock"></i> 8:00 - 22:00 (Thứ 2 - Thứ 7)</p>
+                    </div>
+                </div>
+
+                <div class="store-card">
+                    <div class="store-image">
+                        <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=400&h=300&fit=crop" alt="Store 3">
+                    </div>
+                    <div class="store-info">
+                        <h3>Chi Nhánh Hà Nội</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 789 Hoàn Kiếm, Hà Nội</p>
+                        <p><i class="fas fa-phone"></i> 024 3456 7890</p>
+                        <p><i class="fas fa-clock"></i> 8:00 - 22:00 (Thứ 2 - Thứ 7)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <i class="fas fa-gem"></i>
+                            <span>FASHION</span>
+                        </div>
+                        <p class="footer-desc">Thời trang cao cấp cho phong cách sống hiện đại. Chất lượng và dịch vụ là ưu tiên hàng đầu.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Thông Tin</h4>
+                        <ul>
+                            <li><a href="index.html">Trang Chủ</a></li>
+                            <li><a href="products.html">Sản Phẩm</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Liên Hệ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Hỗ Trợ</h4>
+                        <ul>
+                            <li><a href="#">Chính Sách Đổi Trả</a></li>
+                            <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                            <li><a href="#">Phương Thức Thanh Toán</a></li>
+                            <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Liên Hệ</h4>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Huệ, Q1, TP.HCM</li>
+                            <li><i class="fas fa-phone"></i> 1900 1234</li>
+                            <li><i class="fas fa-envelope"></i> support@fashion.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script>
+        // Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Here you would normally send the data to your server
+            console.log('Form submitted:', formData);
+            
+            // Show success message
+            alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi trong thời gian sớm nhất.');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>

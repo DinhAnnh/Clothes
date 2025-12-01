@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Danh sách sản phẩm thời trang - Áo quần nam nữ, phụ kiện. Giá tốt, chất lượng cao.">
+    <meta name="keywords" content="sản phẩm thời trang, mua quần áo online, thời trang nam nữ">
+    <title>Sản Phẩm - Fashion Store</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👔</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <!-- Announcement Bar -->
+        <div class="announcement-bar">
+            <div class="container">
+                <div class="announcement-content">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>Miễn phí vận chuyển cho đơn hàng từ 500.000đ</span>
+                    <span class="separator">•</span>
+                    <span>Giảm giá 20% toàn bộ BST Xuân Hè 2024</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Header Top -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <div class="header-top-left">
+                        <span><i class="fas fa-phone"></i> Hotline: 1900 1234</span>
+                        <span><i class="fas fa-envelope"></i> support@fashion.com</span>
+                    </div>
+                    <div class="header-top-right">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Header Main -->
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main-content">
+                    <!-- Mobile Menu Toggle -->
+                    <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <!-- Logo -->
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">FASHION</span>
+                            <span class="logo-subtitle">Luxury Store</span>
+                        </div>
+                    </a>
+                    
+                    <!-- Navigation -->
+                    <nav class="main-nav" id="mainNav">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Trang Chủ</a>
+                            </li>
+                            <li class="nav-item has-mega-menu">
+                                <a href="products.html" class="nav-link active">
+                                    Sản Phẩm
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="mega-menu">
+                                    <div class="mega-menu-content">
+                                        <div class="mega-menu-column">
+                                            <h4>Nam Giới</h4>
+                                            <ul>
+                                                <li><a href="products.html?category=ao-nam"><i class="fas fa-angle-right"></i> Áo Nam</a></li>
+                                                <li><a href="products.html?category=quan-nam"><i class="fas fa-angle-right"></i> Quần Nam</a></li>
+                                                <li><a href="products.html?category=giay-dep"><i class="fas fa-angle-right"></i> Giày Dép</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-column">
+                                            <h4>Nữ Giới</h4>
+                                            <ul>
+                                                <li><a href="products.html?category=ao-nu"><i class="fas fa-angle-right"></i> Áo Nữ</a></li>
+                                                <li><a href="products.html?category=vay"><i class="fas fa-angle-right"></i> Váy Đầm</a></li>
+                                                <li><a href="products.html?category=phu-kien"><i class="fas fa-angle-right"></i> Phụ Kiện</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-column">
+                                            <h4>Bộ Sưu Tập</h4>
+                                            <ul>
+                                                <li><a href="products.html?filter=new"><i class="fas fa-angle-right"></i> Hàng Mới Về</a></li>
+                                                <li><a href="products.html?filter=sale"><i class="fas fa-angle-right"></i> Sale Off</a></li>
+                                                <li><a href="products.html"><i class="fas fa-angle-right"></i> Best Seller</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-menu-column mega-menu-featured">
+                                            <h4>Featured</h4>
+                                            <div class="featured-item">
+                                                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300" alt="Featured">
+                                                <div class="featured-content">
+                                                    <h5>BST Mùa Hè 2024</h5>
+                                                    <p>Giảm giá đến 30%</p>
+                                                    <a href="products.html?filter=sale" class="btn-featured">Xem ngay</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="products.html?filter=new" class="nav-link">
+                                    <span class="badge-new">Mới</span>
+                                    Hàng Mới
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="products.html?filter=sale" class="nav-link">
+                                    <span class="badge-sale">Sale</span>
+                                    Giảm Giá
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog.html" class="nav-link">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">Liên Hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- Header Actions -->
+                    <div class="header-actions">
+                        <!-- Search -->
+                        <button class="action-btn search-toggle" id="searchToggle" aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                        
+                        <!-- Wishlist -->
+                        <a href="#" class="action-btn" aria-label="Wishlist">
+                            <i class="far fa-heart"></i>
+                            <span class="action-badge">0</span>
+                        </a>
+                        
+                        <!-- User -->
+                        <a href="#" class="action-btn" id="userIcon" aria-label="Account">
+                            <i class="far fa-user"></i>
+                        </a>
+                        
+                        <!-- Cart -->
+                        <a href="cart.html" class="action-btn cart-btn">
+                            <i class="fas fa-shopping-bag"></i>
+                            <span class="action-badge" id="cartBadge">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-overlay-content">
+                <button class="search-close" id="searchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="search-container">
+                    <input type="text" class="search-input" id="headerSearchInput" placeholder="Tìm kiếm sản phẩm, danh mục..." autocomplete="off">
+                    <button class="search-submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li>Sản Phẩm</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Sidebar Filters -->
+                <aside class="products-sidebar" id="productsSidebar">
+                    <div class="sidebar-header">
+                        <h3>Bộ Lọc</h3>
+                        <button class="close-sidebar" id="closeSidebar">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Danh Mục</h4>
+                        <ul class="filter-list" id="categoryFilter">
+                            <li>
+                                <label>
+                                    <input type="radio" name="category" value="all" checked>
+                                    <span>Tất Cả</span>
+                                </label>
+                            </li>
+                            <!-- Categories will be loaded by JS -->
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Khoảng Giá</h4>
+                        <div class="price-filter">
+                            <div class="price-inputs">
+                                <input type="number" id="minPrice" placeholder="Từ" min="0">
+                                <span>-</span>
+                                <input type="number" id="maxPrice" placeholder="Đến" min="0">
+                            </div>
+                            <button class="btn btn-sm" id="applyPriceFilter">Áp Dụng</button>
+                        </div>
+                        <div class="price-range-labels">
+                            <label>
+                                <input type="radio" name="priceRange" value="all" checked>
+                                <span>Tất Cả</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="priceRange" value="0-200000">
+                                <span>Dưới 200k</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="priceRange" value="200000-500000">
+                                <span>200k - 500k</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="priceRange" value="500000-1000000">
+                                <span>500k - 1tr</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="priceRange" value="1000000-9999999">
+                                <span>Trên 1tr</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Đánh Giá</h4>
+                        <ul class="filter-list">
+                            <li>
+                                <label>
+                                    <input type="radio" name="rating" value="all" checked>
+                                    <span>Tất Cả</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="rating" value="5">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="rating" value="4">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        trở lên
+                                    </span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="rating" value="3">
+                                    <span>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        trở lên
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h4>Trạng Thái</h4>
+                        <ul class="filter-list">
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="status" value="new">
+                                    <span>Hàng Mới</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="status" value="sale">
+                                    <span>Đang Giảm Giá</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="status" value="bestseller">
+                                    <span>Best Seller</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn btn-outline btn-block" id="clearFilters">
+                        <i class="fas fa-redo"></i> Xóa Bộ Lọc
+                    </button>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="products-main">
+                    <div class="products-toolbar">
+                        <div class="toolbar-left">
+                            <button class="filter-toggle" id="filterToggle">
+                                <i class="fas fa-filter"></i> Bộ Lọc
+                            </button>
+                            <span class="result-count" id="resultCount">Hiển thị 18 sản phẩm</span>
+                        </div>
+                        <div class="toolbar-right">
+                            <select id="sortSelect" class="sort-select">
+                                <option value="default">Mặc Định</option>
+                                <option value="name-asc">Tên: A-Z</option>
+                                <option value="name-desc">Tên: Z-A</option>
+                                <option value="price-asc">Giá: Thấp đến Cao</option>
+                                <option value="price-desc">Giá: Cao đến Thấp</option>
+                                <option value="rating">Đánh Giá Cao</option>
+                                <option value="new">Mới Nhất</option>
+                            </select>
+                            
+                            <div class="view-toggle">
+                                <button class="view-btn active" data-view="grid">
+                                    <i class="fas fa-th"></i>
+                                </button>
+                                <button class="view-btn" data-view="list">
+                                    <i class="fas fa-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Products will be loaded here by JavaScript -->
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination" id="pagination">
+                        <!-- Pagination will be loaded here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-tshirt"></i>
+                        <span>Fashion Store</span>
+                    </div>
+                    <p>Thời trang cao cấp, phong cách hiện đại. Chất lượng là ưu tiên hàng đầu.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Về Chúng Tôi</h3>
+                    <ul>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Tuyển Dụng</a></li>
+                        <li><a href="#">Hệ Thống Cửa Hàng</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Chính Sách</h3>
+                    <ul>
+                        <li><a href="#">Chính Sách Đổi Trả</a></li>
+                        <li><a href="#">Chính Sách Bảo Mật</a></li>
+                        <li><a href="#">Điều Khoản Dịch Vụ</a></li>
+                        <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Liên Hệ</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận 1, TP.HCM</li>
+                        <li><i class="fas fa-phone"></i> Hotline: 1900 1234</li>
+                        <li><i class="fas fa-envelope"></i> support@fashion.com</li>
+                        <li><i class="fas fa-clock"></i> 8:00 - 22:00 (Tất cả các ngày)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fashion Store. All rights reserved. Design with <i class="fas fa-heart"></i> by Fashion Team</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
